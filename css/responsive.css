@@ -4,14 +4,244 @@
   * Add the media rule and the styles that belong to the MOBILE view only
 */
 
-@media (min-width: 1024px) {
-  /* .top-navigation .trigram {
-    display: none;
-  } */
-
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+
+@media (min-width: 1024px) {
+  body{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .top-navigation .trigram {
+    display: none;
+  }
+  .top-navigation li :hover {
+    color: #000000;
+  }
+
+  .teammate-social-icons :hover {
+    background-color: #969696;
+  }
+
+  .social-icons :hover {
+    color: #ffffff;
+  }
+
+  .footer-contacts ul :hover {
+    color: #ffffff;
+  }
 }
 
-/* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+/* 👇👇👇 Media rule and the styles for the TABLET 👇👇👇 */
 
-/* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (max-width: 1023px) {
+  body {
+    margin: 0 auto;    
+    width: 100%;
+  }
+
+  .top-navigation .trigram {
+    display: block;
+  } 
+
+  .top-navigation ul {
+    display: none;
+  }
+
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .portfolio-list img {
+    width: 80%;
+    height: auto;
+  }
+
+/* 👇👇👇 OUR TEAM TABLET SECTION 👇👇👇 */
+
+  .teammates-list::before {
+    display: none;
+  }
+
+  .teammates-list::after {
+    display: none;
+  }
+
+.teammates-list {
+  justify-content: center;
+  align-items: center;  
+}
+
+  .teammates-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 378px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .teammate-data {
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+
+  .teammate-role {
+    font-size: 10px;
+  }
+
+  /* 👇👇👇 FOOTER SECTION, ICONS & CONTACT INFO SECTION TABLET 👇👇👇 */
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    max-width: 200px;
+  }
+
+  .facebook span, .twitter span, .instagram span, .linked-in span {
+    display: none;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 650px;
+    justify-content: space-evenly;
+    gap: 60px;
+  }
+  
+  footer .social-icons .icon  {
+  background-color: #ffffff;
+  }
+
+  .footer-contacts ul li a {
+    color: white;
+  }
+}
+
+/* 👇👇👇 Media rule and the styles for the MOBILE view only beneath 👇👇👇 */
+
+@media (max-width:767px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;    
+    width: 100%;
+    min-width: 460px;
+    justify-content: center;
+  }
+
+  .subtext {
+    min-width: 450px;
+  }
+
+  .top-navigation .trigram {
+    display: block;
+  } 
+
+  .top-navigation ul {
+    display: none;
+  }
+  
+  .portfolio-list img {
+    max-width: 328px;
+    height: auto;
+  }
+  
+  .portfolio-item {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .item-description {
+    width: auto;
+    height: auto;
+  }
+
+  content.content-vertical.teammates-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* 👇👇👇 OUR TEAM MOBILE 👇👇👇 */
+
+  .teammates-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .teammate {
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .teammate-data {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teammates-content .subtext {
+    width: 100%;
+  }
+  
+  /* 👇👇👇 FOOTER SECTION, ICONS & CONTACT INFO SECTION MOBILE 👇👇👇 */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  min-width: 767px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .facebook span, .twitter span, .instagram span, .linked-in span {
+    display: block;
+  }
+
+    .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }  
+}  
+
