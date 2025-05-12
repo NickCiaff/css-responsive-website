@@ -62,7 +62,7 @@
   }
 
   .portfolio-list img {
-    width: 80%;
+    width: 160px;
     height: auto;
   }
 
@@ -101,9 +101,23 @@
     width: auto;
   }
 
-  .teammate-role {
-    font-size: 10px;
+  .teammate {
+    width: 45%;
   }
+
+  .teammate-img-wrapper img {
+    width: 100%;
+  }
+
+  .teammate-img-wrapper {
+    width: 100%;
+  }
+
+  .teammates-list-wrapper {
+    width: 100%;
+  }
+
+
 
   /* 👇👇👇 FOOTER SECTION, ICONS & CONTACT INFO SECTION TABLET 👇👇👇 */
 
@@ -143,12 +157,12 @@
     flex-direction: column;
     margin: 0 auto;    
     width: 100%;
-    min-width: 460px;
+    min-width: 360px;
     justify-content: center;
   }
 
   .subtext {
-    min-width: 450px;
+    min-width: 350px;
   }
 
   .top-navigation .trigram {
@@ -208,6 +222,20 @@
   .teammates-content .subtext {
     width: 100%;
   }
+
+  .teammate {
+    width: 100%;
+  }
+
+  .teammate-img-wrapper {
+    width: 160px;
+    overflow: hidden;
+  }
+
+  .teammate-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+  }
   
   /* 👇👇👇 FOOTER SECTION, ICONS & CONTACT INFO SECTION MOBILE 👇👇👇 */
 
@@ -243,5 +271,4 @@
     flex-wrap: wrap;
     align-content: center;
   }  
-}  
-
+} 
